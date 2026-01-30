@@ -210,7 +210,10 @@
     "type_form_parameters": true,
     "types_naming": false,
     "uncaught_exception": true,
-    "unknown_types": true,
+    "unknown_types": {
+      "exclude": ["YCX_NDBS_EXCEPTION"],
+      "severity": "Error"
+    },
     "unreachable_code": true,
     "unused_methods": false,
     "unused_types": false,
