@@ -15,6 +15,7 @@ CLASS ycl_bad_class_name DEFINITION
     METHODS bad_exception RAISING cx_sy_arithmetic_error.
     METHODS bad_pretty_print.
     METHODS too_many_blank_lines.
+    methods commneted_code.
 ENDCLASS.
 
 
@@ -75,7 +76,6 @@ CLASS ycl_bad_class_name IMPLEMENTATION.
     SELECT SINGLE FROM mara
       FIELDS matnr
       WHERE matnr = 'MYMATERIAL'
-    " TODO: variable is assigned but never used (ABAP cleaner)
       INTO @DATA(material).
   ENDMETHOD.
 
@@ -98,6 +98,13 @@ CLASS ycl_bad_class_name IMPLEMENTATION.
 
 
     my_var = |change text|.
+  ENDMETHOD.
+
+  METHOD commneted_code.
+*    SELECT SINGLE FROM mara
+*      FIELDS matnr
+*      WHERE matnr = 'MYMATERIAL'
+*      INTO @DATA(material).
   ENDMETHOD.
 
 ENDCLASS.
