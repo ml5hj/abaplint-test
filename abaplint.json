@@ -26,7 +26,7 @@
   ],
   "syntax": {
     "version": "v740sp08",
-    "errorNamespace": "^(Z|Y|LCL_|TY_|TT_|LIF_|/.+/)"
+    "errorNamespace": "^(Z|Y|LCL_|TY_|TT_|LIF_)"
   },
   "rules": {
     "7bit_ascii": true,
