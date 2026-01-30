@@ -71,7 +71,7 @@
     "class_attribute_names": false,
     "cloud_types": true,
     "colon_missing_space": true,
-    "commented_code": false,
+    "commented_code": true,
     "constructor_visibility_public": true,
     "contains_tab": {
       "exclude": [],
