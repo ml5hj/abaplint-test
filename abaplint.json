@@ -26,7 +26,7 @@
   ],
   "syntax": {
     "version": "v740sp08",
-    "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)"
+    "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_|/*/)"
   },
   "rules": {
     "7bit_ascii": true,
@@ -159,9 +159,9 @@
       "patternKind": "required",
       "ignoreNames": [],
       "ignorePatterns": [],
-      "clas": "^ZC(L|X)\\_",
-      "intf": "^ZIF\\_",
-      "prog": "^Z",
+      "clas": "(^Z|Y)(CX)\\_",
+      "intf": "(^Z|Y)IF\\_",
+      "prog": "(^Z|Y)",
       "fugr": "^Z",
       "tabl": "^Z",
       "ttyp": "^Z",
