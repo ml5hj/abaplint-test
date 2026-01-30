@@ -159,7 +159,7 @@
       "patternKind": "required",
       "ignoreNames": [],
       "ignorePatterns": [],
-      "clas": "(^ZCL|^YCL|^/.+/CL)\\_",
+      "clas": "(ZCL|YCL|/.+/CL)\\_",
       "intf": "^(Z|Y)IF\\_",
       "prog": "^(Z|Y)",
       "fugr": "^Z",
@@ -211,7 +211,7 @@
     "types_naming": false,
     "uncaught_exception": true,
     "unknown_types": {
-      "exclude": ["YCX_NDBS_EXCEPTION"],
+      "exclude": ["ycx_ndbs_exception"],
       "severity": "Error"
     },
     "unreachable_code": true,
