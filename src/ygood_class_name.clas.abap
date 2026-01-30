@@ -7,7 +7,7 @@ CLASS ygood_class_name DEFINITION
 
   PRIVATE SECTION.
     METHODS good_comment.
-    METHODS good_Exception RAISING ycx_ndbs_exception.
+    METHODS good_exception RAISING ycx_ndbs_exception.
 ENDCLASS.
 
 
