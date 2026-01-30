@@ -15,7 +15,8 @@ CLASS ycl_bad_class_name DEFINITION
     METHODS bad_exception RAISING cx_sy_arithmetic_error.
     METHODS bad_pretty_print.
     METHODS too_many_blank_lines.
-    methods commneted_code.
+    methods commented_code.
+    methods procedural_construct.
 ENDCLASS.
 
 
@@ -100,11 +101,17 @@ CLASS ycl_bad_class_name IMPLEMENTATION.
     my_var = |change text|.
   ENDMETHOD.
 
-  METHOD commneted_code.
+  METHOD commented_code.
 *    SELECT SINGLE FROM mara
 *      FIELDS matnr
 *      WHERE matnr = 'MYMATERIAL'
 *      INTO @DATA(material).
+  ENDMETHOD.
+
+  METHOD procedural_construct.
+    DATA test_class TYPE REF TO ycl_bad_class_name.
+    CREATE OBJECT test_class TYPE ycl_bad_class_name.
+
   ENDMETHOD.
 
 ENDCLASS.
