@@ -159,7 +159,7 @@
       "patternKind": "required",
       "ignoreNames": [],
       "ignorePatterns": [],
-      "clas": "^(Z|Y)(CX)\\_",
+      "clas": "^(Z|Y)(CX|.+)\\_",
       "intf": "^(Z|Y)IF\\_",
       "prog": "^(Z|Y)",
       "fugr": "^Z",
