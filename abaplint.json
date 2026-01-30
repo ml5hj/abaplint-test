@@ -10,7 +10,7 @@
   "dependencies": [
     {
       "url": "https://github.com/abaplint/deps",
-      "folder": "/deps1",
+      "folder": "/deps",
       "files": "/src/**/*.*"
     },
     {
@@ -25,7 +25,7 @@
     }
   ],
   "syntax": {
-    "version": "v740sp08",
+    "version": "v758",
     "errorNamespace": "^(Z|Y|LCL_|LIF_|TY_|TT_|/.+/.+)"
   },
   "rules": {
