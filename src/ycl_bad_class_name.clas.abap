@@ -13,7 +13,8 @@ CLASS ycl_bad_class_name DEFINITION
     METHODS use_of_hardcoded_value.
     METHODS bad_comment.
     METHODS bad_exception RAISING cx_sy_arithmetic_error.
-    methods bad_pretty_print.
+    METHODS bad_pretty_print.
+    METHODS too_many_blank_lines.
 ENDCLASS.
 
 
@@ -87,8 +88,16 @@ CLASS ycl_bad_class_name IMPLEMENTATION.
 
   ENDMETHOD.
   METHOD bad_pretty_print.
-  "also note the missing space between endmethod/method
-data(my_var) = 'not pretty printed'.
+    "also note the missing space between endmethod/method
+  DATA(my_var) = 'not pretty printed'.
+  ENDMETHOD.
+
+  METHOD too_many_blank_lines.
+    DATA(my_var) = 'hello'.
+
+
+
+    my_var = |change text|.
   ENDMETHOD.
 
 ENDCLASS.
