@@ -146,16 +146,6 @@
     },
     "line_only_punc": true,
     "local_class_naming": true,
-    "local_variable_names": {
-      "exclude": [],
-      "severity": "Error",
-      "patternKind": "required",
-      "ignoreNames": [],
-      "ignorePatterns": [],
-      "expectedData": "^L._.+$",
-      "expectedConstant": "^LC_.+$",
-      "expectedFS": "^<L._.+>$"
-    },
     "main_file_contents": true,
     "max_one_statement": true,
     "message_exists": true,
@@ -168,6 +158,18 @@
     "names_no_dash": true,
     "nesting": true,
     "newline_between_methods": true,
+    "no_prefixes": {
+  "exclude": [],
+  "severity": "Error",
+  "data": "^[LGM].?_",
+  "statics": "^S.?_",
+  "fieldSymbols": "^<[LGMF].?_",
+  "constants": "^[LGM]?C.?_",
+  "types": "TY_",
+  "methodParameters": "^[ICER].?_",
+  "allowIsPrefixBoolean": true,
+  "maxIssuesPerFile": 10
+},
     "no_public_attributes": true,
     "object_naming": {
       "exclude": [],
